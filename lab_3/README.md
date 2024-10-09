@@ -10,7 +10,7 @@
 * '\item' - для обозначения отдельных записей черной точкой, или буллетом. Текст в записях может иметь неограниченную длину.
 * '\par'- для создания абзаца
 
-Более подробный гайд можно посмотреть тут [тут](https://habr.com/ru/companies/ruvds/articles/574352/).
+Более подробный гайд можно посмотреть [тут](https://habr.com/ru/companies/ruvds/articles/574352/).
 
 ![lab_1latex](https://github.com/user-attachments/assets/5af84133-1493-4286-9dc1-c778c620b1f7)
 
