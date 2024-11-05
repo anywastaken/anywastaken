@@ -3,8 +3,8 @@
  - 2
  - 3
 
-INTRODUCTION
-~text1~
+	INTRODUCTION
+~Text1~
 
 MAIN PART
 ~text2~
