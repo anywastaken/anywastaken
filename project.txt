@@ -5,3 +5,6 @@ DESCRIPTION:
 
 INTRODUCTION
 ~text1~
+
+MAIN PART
+~text2~
