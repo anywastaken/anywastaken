@@ -11,3 +11,5 @@ MAIN PART
 
 TEXT
 ~sentence~ ~sentence~ ~sentence~
+~sentence~ ~sentence~ ~sentence~
+~sentence~ ~sentence~ ~sentence~
