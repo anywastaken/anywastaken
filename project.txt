@@ -1,13 +1,13 @@
-DESCRIPTION:
--1
--2
--3
+	DESCRIPTION:
+ - 1
+ - 2
+ - 3
 
-INTRODUCTION
-~text1~
+	INTRODUCTION
+~Text1~
 
-MAIN PART
-~text2~
+	MAIN PART
+~Text2~
 
 TEXT
 ~sentence~ ~sentence~ ~sentence~
