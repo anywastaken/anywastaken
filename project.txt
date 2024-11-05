@@ -8,3 +8,6 @@ INTRODUCTION
 
 MAIN PART
 ~text2~
+
+TEXT
+~sentence~ ~sentence~ ~sentence~
