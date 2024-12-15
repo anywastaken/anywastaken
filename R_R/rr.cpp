@@ -143,13 +143,14 @@ int main()
 			}
 		}
 
+		//граф без вершины
 		for (int i = 0; i < n - 1; i++)
 		{
 			visited[i] = false;
 		}
 
+		//определение кол-ва компонент связности
 		comp = 0;
-
 		while (!cond(visited, n - 1, start))
 		{
 			fool.push(start);
@@ -157,6 +158,7 @@ int main()
 			dfs(nmas, n - 1, fool, visited);
 		}
 
+		//сравнение
 		if (sres < comp)
 		{
 
