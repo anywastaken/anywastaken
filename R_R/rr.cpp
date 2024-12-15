@@ -45,6 +45,7 @@ bool cond(bool* visited, int n, int& start)
 
 int main()
 {
+	//ввод данных
 	setlocale(LC_ALL, "RU");
 	int n;
 	cout << "Введите колличество вершин графа:" << endl;
