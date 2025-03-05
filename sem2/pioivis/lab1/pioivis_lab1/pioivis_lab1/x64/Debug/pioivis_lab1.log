@@ -1,0 +1,4 @@
+﻿  jungtable.cpp
+D:\university\pioivis\sem2\pioivis_lab1\pioivis_lab1\jungtable.cpp(31,26): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\university\pioivis\sem2\pioivis_lab1\pioivis_lab1\jungtable.cpp(52,26): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  pioivis_lab1.vcxproj -> D:\university\pioivis\sem2\pioivis_lab1\x64\Debug\pioivis_lab1.exe
