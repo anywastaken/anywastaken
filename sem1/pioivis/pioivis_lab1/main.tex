@@ -1,0 +1,346 @@
+\documentclass[9pt, letterpaper]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{multicol}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage[left=17mm, top=15mm, right=17mm, bottom=20mm, ]{geometry}
+\setlength{\columnsep}{0.5cm}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\textbf{\thepage}}
+\setcounter{page}{24}
+\renewcommand{\headrulewidth}{0pt}
+
+\title{lab1.tex}
+\author{AnY}
+\date{September 2024}
+
+\begin{document}
+\begin{spacing}{0.97}
+\begin{multicols} 2
+\noindent
+nisms of this kind assume the absence of direct interaction between autonomous entities composing the system,
+but their interaction through a common environment,
+which in the framework of the proposed approach is a
+common semantic memory (both within the 
+\textit{individual ostis-system}
+and within the collective \textit{ostis-system}).
+\begin{center}
+V. Means of specification of next-generation intelligent
+computer systems in the context of collective problem
+solving
+\end{center}
+
+An important role in the proposed approach to problem
+solving within the \textit{OSTIS Ecosystem} is played by a
+rather detailed and unified specification of ostis-systems
+included in the \textit{OSTIS Ecosystem}. Each ostis-system
+included in the \textit{OSTIS Ecosystem} is subject to a number
+of requirements [4], [8], the fulfillment of which is
+necessary to ensure the principle possibility of collective problem solving, to increase the efficiency of the
+evolution of \textit{OSTIS Ecosystem} and \textit{OSTIS Technology},
+to reduce the requirements to the developers of ostis systems and the labor intensity of their development. The
+most important of these requirements is the requirement
+to ensure compatibility (both syntactic and semantic)
+of each \textit{ostis-system} with others, and in particular with
+the \textit{OSTIS Metasystem} containing the current version of
+the \textit{OSTIS Standard}, and to continuously analyze and
+maintain such compatibility.
+
+At the same time, in order to organize problem solving
+within \textit{OSTIS Ecosystem} it is additionally necessary to
+have a detailed specification of functional capabilities of
+each ostis-system and to ensure the relevance of such
+specification in the process of evolution of this ostis system. This specification is part of the knowledge base
+of \textit{corporate ostis-systems ostis-communities}, to which
+the specified ostis-system belongs. If the ostis-system is
+not currently a part of \textit{any ostis-community, \emph{the} corporate
+ostis-system \emph{is the} OSTIS Metasystem}.
+
+The basis of the knowledge base of any ostis-system
+is a hierarchical system of \textit{sc-models of subject domains}
+and their corresponding formal \textit{ontologies} describing the
+properties of entities studied within the specified subject
+domains [4], [22]. Thus, the knowledge base of the \textit{corporate ostis-system} contains sc-models of those subject
+domains, on the automation of various activities in which
+the corresponding \textit{ostis-community} is oriented. In order
+to provide the possibility of automatic determination of
+the collective of ostis-systems necessary for solving a
+particular problem and clarifying the plan of solving
+this problem, it is necessary to develop for each subject
+domain the corresponding \textit{ontology of subject domain
+problem classes and problem solving methods}. [4], [9].
+
+The specified ontology includes a description:
+\begin{itemize}
+        \item \textit{classes of problems} solved in the corresponding
+subject domain;
+    \item \textit{methods} of problem solving corresponding to the
+specified \textit{classes of problems};
+    \item \textit{skills} of problem solving corresponding to the specified \textit{classes of problems}, i.e. \textit{methods}, supplemented by the description of \textit{sc-agents} implementing the
+specified \textit{methods} with the corresponding specification [4];
+    \item method representation languages specific to the subject domain;
+    \item strategies of problem solving specific to the subject domain, i.e. meta-methods of forming other methods
+of problem solving;
+    \item and other entities, the description of which is necessary to organize problem solving processes within
+the subject domain. For example, if there are several
+methods of solving problems of the same class, it
+is reasonable to describe their comparison in order
+to be able to choose the method most suitable for
+the current situation.
+\end{itemize}
+
+As mentioned earlier, the ontology presented in [15]
+is proposed to be used as a basis for the content of the
+general ontology of all possible problem classes solved
+within the \textit{OSTIS Ecosystem}. Thus, the set of problem
+classes described within a particular \textit{ontology of subject
+domain problem classes and problem solving methods}
+will specify some subset of problem classes from such
+a top-level \textit{problem ontology}. Examples of describing
+specific classes of problems and corresponding methods
+of their solution using the example of neural network
+methods of problem solving can be found in [23].
+
+Thus, each ostis-system being a part of some ostiscommunity should be specified using the concepts of
+\textit{ontology of subject domain problem classes and problem solving methods} presented within the corresponding
+\textit{corporate ostis-system}. In its turn, within each individual
+ostis-system, this ontology can be further refined. Note
+that the same methods (and, accordingly, skills) can
+be duplicated between different ostis-systems, but the
+information about it is explicitly recorded, which allows
+us to take it into account when forming a problem solving
+plan and determining the composition of participants of
+the collective of ostis-systems taking part in the solution.
+
+Accordingly, when adding ("registering") an ostis-system to an ostis-community, the following steps must
+be performed:
+
+\begin{itemize}
+    \item Integrate the \textit{ontology of subject domain problem
+classes and problem solving methods} into the corresponding ontology of the \textit{corporate ostis-system}.
+Thus, the \textit{corporate ostis-system} will receive information about new problem classes and methods of
+their solving, if there are any in the added ostis-system;
+    \item Using the obtained integrated ontology, generate
+a specification of the added ostis-system in the
+knowledge base of \textit{corporate ostis-system};
+
+    \item When the functionality of a \textit{ostis-system} changes, it
+must notify the \textit{corporate ostis-systems} of all \textit{ostis
+communities} of which this \textit{ostis-system} is a part,
+which in turn will lead to corresponding changes in
+the knowledge bases of these corporate \textit{ostis-systems}
+and possibly to refinements of their corresponding
+\textit{ontologies of subject domain problem classes and
+problem solving methods}. Note that this approach
+has an advantage over many traditional approaches
+to agent communication in multi-agent systems,
+where for successful subsequent operation of the
+system it is required to inform about the addition of
+a new agent \underline{all} agents already in the system, since
+in the process of problem solving agents exchange
+messages directly and must "know" each other.
+\end{itemize}
+
+The considered specification of \textit{ostis-systems} within
+the framework of \textit{OSTIS Ecosystem} can be used not
+only for organizing problem solving, but also for other
+purposes, in particular, for implementing the idea of
+component design of ostis-systems [24]. Besides, the
+considered specification of \textit{ostis-systems} is also necessary
+for the developers of \textit{ostis-systems} in order to understand
+what capabilities are already presented within \textit{OSTIS
+Ecosystem}, within which \textit{ostis-communities}, with the
+developers of which ostis-systems it is necessary to
+coordinate these or those components of the developed
+system, and for solving a number of other design problem
+solving.
+
+\begin{center}
+VI. A general plan for solving a specific problem
+within the next-generation intelligent computer systems
+ecosystem
+\end{center}
+
+According to the proposed approach to problem solving within the \textit{OSTIS Ecosystem}, solving a particular
+problem generally involves the following steps:
+
+\begin{itemize}
+    \item Problem formulation. In general, two options are
+possible at this step:
+    \begin{itemize}
+        \item the initiator of problem solving is an ostis-system,
+which is a part of \textit{OSTIS Ecosystem}. In this
+case, the problem formulation is placed in the
+knowledge base of the corresponding \textit{corporate
+ostis-system}. To describe the problem formulation
+at the first stage, both the top-level \textit{ontology
+of subject domain problem classes and problem
+solving methods} (included in the \textit{OSTIS Standard}
+and, respectively, in the knowledge base of the
+\textit{OSTIS Metasystem}) and more particular \textit{ontology
+of subject domain problem classes and problem solving methods} corresponding to the \textit{ostis-systems} belonging to the given \textit{ostis-community}
+can be used.
+        \item the initiator of problem solving is an external
+cybernetic system, in particular a human user. In
+this case, it is assumed that communication with
+the \textit{OSTIS Ecosystem} is carried out by a \textit{personal
+ostis-assistant} corresponding to this cybernetic
+system. Thus, in this case, the task formulation
+is placed in the knowledge base of the \textit{personal
+ostis-assistant} and then moved to the knowledge
+base of the \textit{corporate ostis-system} of the ostiscommunity of which this \textit{personal ostis-assistant}
+is a member. If a user is a member of several
+\textit{ostis-communities} through his/her \textit{personal ostisassistant}, then the problem of optimal selection
+of the \textit{ostis-community} within which it is most
+expedient to start solving a problem becomes
+relevant. At the same time, the proposed approach
+to decentralized problem solving in general does
+not depend on which \textit{corporate ostis-system} the
+problem formulation initially enters, it affects
+only the total time of problem solving.
+    \end{itemize}
+Thus, as a result of this step, in any case, the
+problem formulation enters the knowledge base of
+some \textit{corporate ostis-system} (in general, not necessarily that \textit{corporate ostis-system}, which will act
+as a communication environment in the process of
+solving this problem).
+\end{itemize}
+
+\begin{itemize}
+    \item Determining the set of \textit{ostis-systems} to be involved in problem solving. In general, it may be
+sufficient to involve only \textit{ostis-systems} representing
+one \textit{ostis-community}, or a set of \textit{ostis-systems} belonging to different \textit{ostis-communities}. The specific
+mechanism of this stage requires clarification, but
+the following principles are suggested as its basis:
+    \begin{itemize}
+        \item the initiator of this stage is the \textit{corporate ostis-system} whose knowledge base contains the corresponding problem formulation. For this purpose,
+the specified \textit{corporate ostis-system} interacts with
+other \textit{corporate ostis-systems}, if necessary involving \textit{corporate ostis-systems} of a higher level.
+Development of a protocol for such interaction is
+an actual task;
+        \item the key role at this stage is played by the previously discussed \textit{ostis-systems} specifications describing \textit{classes of problems, methods} of their
+solving, etc;
+        \item in the process of performing this stage, the initial
+problem formulation may be refined taking into
+account particular \textit{ontologies of subject domain
+problem classes and problem solving methods}.
+    \end{itemize}
+    \item Definition (selection) of \textit{corporate ostis-system},
+which will be the communication environment for
+solving the currently formulated problem solving
+task. The principles of such a selection have been
+discussed above.
+    \item Formation of a problem solving plan. At this
+stage of development of the theory of decentralized
+problem solving within the \textit{OSTIS Ecosystem}, we
+will assume that the solution plan of a particular
+problem is formed, stored and refined entirely within
+the corresponding \textit{corporate ostis-system}. In general,
+we can talk about the possibility of distributed
+storage of the problem solving plan, but the interpretation of such a plan will require additional
+costs for interaction between ostis-systems and the
+development of additional mechanisms for the transfer of intermediate information and synchronization
+of actions between ostis-systems, the feasibility of
+which is difficult to assess at the moment in the
+absence of a sufficiently large number of applied
+examples of solving such complex problems.
+The development of a general strategy for forming a
+plan for solving an arbitrary problem is currently an
+actual direction of development of the approaches
+considered in this paper. It is important to note
+that the problem solving plan in the general case
+will be constantly refined in the course of its implementation, which may require the refinement of the
+collective of ostis-systems involved in implementing
+this plan. This strategy is based on the idea of
+situational management [25] in conjunction with
+general methodological ideas related to the theory of
+behaviorism and the ideas of its application in computer science that are gaining popularity [26]–[28],
+TRIZ [29], as well as SMD-methodology proposed
+by the school of G. P. Shchedrovitsky [30].
+    \item Step-by-step interpretation of the problem solving plan. The basic principles of interaction between \textit{corporate ostis-system} and other \textit{ostis-systems}
+participating in the problem solving process were
+considered earlier in the context of specifying the
+architecture of the multi-agent \textit{ostis-systems} within
+the \textit{OSTIS Ecosystem}. Implementing these principles requires specifying the architecture of the \textit{ostis-systems} subsystems responsible for interaction between them in the process of problem solving and
+developing an appropriate interaction language.
+Figure 3 shows an example of the interpretation
+of a problem solving plan stored in the memory
+of a \textit{corporate ostis-system} by a collective of \textit{ostis-systems}. As can be seen from the example, \textit{ostis-systems} interact with each other by means of corresponding communication subsystems, while the
+problem solving process itself does not take into
+account the fact of decentralized solution in any
+way.
+    \item Specification of the result of problem solving and
+its transfer to the initiator. At this stage, the specification of the problem solving result (including
+the result itself, if it is an information construct) is
+formed, the composition of which generally depends
+on the problem class, and the obtained specification
+is transferred to the \textit{ostis-system}, which was the initiator of the problem solving (in case of the end user
+\textit{OSTIS Ecosystem}, the specification is transferred to
+his \textit{personal ostis-assistant}).
+\end{itemize}
+
+It should be noted that the presented general plan of
+problem solving within the \textit{OSTIS Ecosystem}, as can be
+seen from the explanations to its stages, is preliminary
+and in the future requires detailed specification of each
+of the stages.
+
+\begin{center}
+   VII. Conclusion 
+\end{center}
+
+This paper considers the basic principles of decentralized problem solving within the next-generation intelligent computer systems ecosystem (\textit{OSTIS Ecosystem}).
+In particular, the architecture of \textit{OSTIS Ecosystem}, the
+typology of\textit{ agents of OSTIS Ecosystem}, and the features
+of problem solving within \textit{OSTIS Ecosystem} are specified.
+The approach to problem solving within OSTIS Ecosystem, means of specification of \textit{ostis-systems} in the context
+of collective problem solving is proposed. A general
+plan for solving a particular problem within the \textit{OSTIS
+Ecosystem} is proposed.
+
+At the same time, the solution of a number of promising tasks remains relevant:
+\begin{itemize}
+    \item Development of a general strategy for solving problems of an arbitrary class, the principles of forming
+a general plan for solving a particular problem;
+    \item Clarifying the language of the problem statements
+and objectives;
+    \item Development of a general \textit{Ontology of problem
+classes and problem solving methods}, clarification
+of the principles of development of private \textit{ontologies of subject domain problem classes and problem
+solving methods} on its basis and principles of specification of internal \textit{sc-agents} and whole \textit{ostis-systems}
+using these ontologies;
+    \item Development of a language of interaction between
+\textit{ostis-systems} at the stage of collective formation of
+\textit{ostis-systems }of a particular problem solving;
+    \item Development of a language of interaction between
+\textit{ostis-systems }at the stage of problem solving (interpretation and refinement of the problem solving
+plan);
+    \item Refinement of the architecture of the\textit{ ostis-systems}
+subsystems responsible for the interaction between
+them in the process of problem solving.
+\end{itemize}
+
+\begin{center}
+    Acknowledgment
+\end{center}
+
+The author would like to thank the scientific collectives of the departments of Intelligent Information Technologies of the Belarusian State University of Informatics
+and Radioelectronics and Brest State Technical University
+for their help and valuable comments.
+\begin{center}
+    References
+\end{center}
+\renewcommand{\labelitemi}{[1]}
+\begin{itemize}
+    \item V. Gorodetskii, “Bazovye trendy decentralizovannogo
+iskusstvennogo intellekta [basic trends in decentralized artificial
+intelligence],” in Dvadcataja Nacional’naja konferencija
+po iskusstvennomu intellektu s mezhdunarodnym uchastiem,
+KII-2022 : Trudy konferencii. V 2-h tomah, Moskva, 21–23
+dekabrja 2022 goda. Tom 2. [Twentieth National Conference on
+Artificial Intelligence with International Participation, CAI-2022 :
+\end{itemize}
+\end{multicols}
+\end{spacing}
+\end{document}
