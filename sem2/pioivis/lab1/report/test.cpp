@@ -2,17 +2,17 @@
 #include "jungtable.h"
 #include "gtest/gtest.h"
 
-// Тест на добавление элементов
+// Е‡ДєЕ„Е€ Г­Е• Г¤Г®ГЎЕ•ГўГ«ДєГ­ДЌДє ГЅГ«ДєД›ДєГ­Е€Г®Гў
 TEST(jungtableTest, PushTest) {
     jungtable table;
 
-    EXPECT_EQ(table.push(5), 0);  // Успешное добавление 5
-    EXPECT_EQ(table.push(3), 0);  // Добавление 3
-    EXPECT_EQ(table.push(7), 0);  // Добавление 7
-    EXPECT_EQ(table.push(5), 404); // Повторное добавление 5 должно вернуть 404
+    EXPECT_EQ(table.push(5), 0);  // Г“Е„ДЏДєЕ™Г­Г®Дє Г¤Г®ГЎЕ•ГўГ«ДєГ­ДЌДє 5
+    EXPECT_EQ(table.push(3), 0);  // Г„Г®ГЎЕ•ГўГ«ДєГ­ДЌДє 3
+    EXPECT_EQ(table.push(7), 0);  // Г„Г®ГЎЕ•ГўГ«ДєГ­ДЌДє 7
+    EXPECT_EQ(table.push(5), 404); // ДЋГ®ГўЕ€Г®Д‘Г­Г®Дє Г¤Г®ГЎЕ•ГўГ«ДєГ­ДЌДє 5 Г¤Г®Г«Д‡Г­Г® ГўДєД‘Г­ГіЕ€Гј 404
 }
 
-// Тест на удаление
+// Е‡ДєЕ„Е€ Г­Е• ГіГ¤Е•Г«ДєГ­ДЌДє
 TEST(jungtableTest, DeleteTest) {
     jungtable table;
     table.push(10);
@@ -21,18 +21,18 @@ TEST(jungtableTest, DeleteTest) {
     table.push(7);
     table.push(3);
 
-    EXPECT_EQ(table.del(1, 1), 404); // Неверный индекс
+    EXPECT_EQ(table.del(1, 1), 404); // ГЌДєГўДєД‘Г­Е±Г© ДЌГ­Г¤ДєД™Е„
     EXPECT_EQ(table.del(1, 2), 404);
     EXPECT_EQ(table.del(2, 1), 404);
     EXPECT_EQ(table.del(2, 2), 0);
     std::vector<std::vector<int>> expected = { { 3, 15 }, { 5 }, { 10 } };
     EXPECT_EQ(table.body, expected);
-    EXPECT_EQ(table.del(3, 1), 0); // Удаление первого элемента 
+    EXPECT_EQ(table.del(3, 1), 0); // Г“Г¤Е•Г«ДєГ­ДЌДє ДЏДєД‘ГўГ®ДѓГ® ГЅГ«ДєД›ДєГ­Е€Е• 
     expected = { { 5, 15 }, { 10 } };
     EXPECT_EQ(table.body, expected);
 }
 
-// Тест на сортировку элементов
+// Е‡ДєЕ„Е€ Г­Е• Е„Г®Д‘Е€ДЌД‘Г®ГўД™Гі ГЅГ«ДєД›ДєГ­Е€Г®Гў
 TEST(jungtableTest, OrderTest) {
     jungtable table;
     table.push(10);
@@ -45,13 +45,13 @@ TEST(jungtableTest, OrderTest) {
     EXPECT_EQ(table.body, expected);
 }
 
-// Проверка пустой таблицы
+// ДЋД‘Г®ГўДєД‘Д™Е• ДЏГіЕ„Е€Г®Г© Е€Е•ГЎГ«ДЌГ¶Е±
 TEST(jungtableTest, EmptyTest) {
     jungtable table;
-    EXPECT_TRUE(table.body.empty());  // Должно быть пусто в начале
+    EXPECT_TRUE(table.body.empty());  // Г„Г®Г«Д‡Г­Г® ГЎЕ±Е€Гј ДЏГіЕ„Е€Г® Гў Г­Е•Г·Е•Г«Дє
 }
 
-// Тест на вывод (проверяет, что программа не падает)
+// Е‡ДєЕ„Е€ Г­Е• ГўЕ±ГўГ®Г¤ (ДЏД‘Г®ГўДєД‘Л™ДєЕ€, Г·Е€Г® ДЏД‘Г®ДѓД‘Е•Д›Д›Е• Г­Дє ДЏЕ•Г¤Е•ДєЕ€)
 TEST(jungtableTest, PrintTest) {
     jungtable table;
     table.push(8);
@@ -59,7 +59,7 @@ TEST(jungtableTest, PrintTest) {
     table.print();
 }
 
-// Запуск всех тестов
+// Г‡Е•ДЏГіЕ„Д™ ГўЕ„ДєЕ‘ Е€ДєЕ„Е€Г®Гў
 int main(int argc, char** argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
