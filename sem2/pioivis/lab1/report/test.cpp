@@ -30,6 +30,11 @@ TEST(jungtableTest, DeleteTest) {
     EXPECT_EQ(table.del(3, 1), 0); 
     expected = { { 5, 15 }, { 10 } };
     EXPECT_EQ(table.body, expected);
+    EXPECT_EQ(table.del(2, 1), 0);
+    EXPECT_EQ(table.del(1, 2), 0);
+    EXPECT_EQ(table.del(1, 1), 0);
+    expected = {  };
+    EXPECT_EQ(table.body, expected);
 }
 
 // Тест на сортировку элементов
