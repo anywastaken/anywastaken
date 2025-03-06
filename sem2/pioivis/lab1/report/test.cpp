@@ -2,17 +2,17 @@
 #include "jungtable.h"
 #include "gtest/gtest.h"
 
-// Ňĺńň íŕ äîáŕâëĺíčĺ ýëĺěĺíňîâ
+// Тест на добавление элементов
 TEST(jungtableTest, PushTest) {
     jungtable table;
 
-    EXPECT_EQ(table.push(5), 0);  // Óńďĺříîĺ äîáŕâëĺíčĺ 5
-    EXPECT_EQ(table.push(3), 0);  // Äîáŕâëĺíčĺ 3
-    EXPECT_EQ(table.push(7), 0);  // Äîáŕâëĺíčĺ 7
-    EXPECT_EQ(table.push(5), 404); // Ďîâňîđíîĺ äîáŕâëĺíčĺ 5 äîëćíî âĺđíóňü 404
+    EXPECT_EQ(table.push(5), 0);  
+    EXPECT_EQ(table.push(3), 0);  
+    EXPECT_EQ(table.push(7), 0);  
+    EXPECT_EQ(table.push(5), 404); 
 }
 
-// Ňĺńň íŕ óäŕëĺíčĺ
+// Тест на удаление
 TEST(jungtableTest, DeleteTest) {
     jungtable table;
     table.push(10);
@@ -21,18 +21,18 @@ TEST(jungtableTest, DeleteTest) {
     table.push(7);
     table.push(3);
 
-    EXPECT_EQ(table.del(1, 1), 404); // Íĺâĺđíűé číäĺęń
+    EXPECT_EQ(table.del(1, 1), 404); 
     EXPECT_EQ(table.del(1, 2), 404);
     EXPECT_EQ(table.del(2, 1), 404);
     EXPECT_EQ(table.del(2, 2), 0);
     std::vector<std::vector<int>> expected = { { 3, 15 }, { 5 }, { 10 } };
     EXPECT_EQ(table.body, expected);
-    EXPECT_EQ(table.del(3, 1), 0); // Óäŕëĺíčĺ ďĺđâîăî ýëĺěĺíňŕ 
+    EXPECT_EQ(table.del(3, 1), 0); 
     expected = { { 5, 15 }, { 10 } };
     EXPECT_EQ(table.body, expected);
 }
 
-// Ňĺńň íŕ ńîđňčđîâęó ýëĺěĺíňîâ
+// Тест на сортировку элементов
 TEST(jungtableTest, OrderTest) {
     jungtable table;
     table.push(10);
@@ -45,13 +45,13 @@ TEST(jungtableTest, OrderTest) {
     EXPECT_EQ(table.body, expected);
 }
 
-// Ďđîâĺđęŕ ďóńňîé ňŕáëčöű
+// Проверка пустой таблицы
 TEST(jungtableTest, EmptyTest) {
     jungtable table;
-    EXPECT_TRUE(table.body.empty());  // Äîëćíî áűňü ďóńňî â íŕ÷ŕëĺ
+    EXPECT_TRUE(table.body.empty());  
 }
 
-// Ňĺńň íŕ âűâîä (ďđîâĺđ˙ĺň, ÷ňî ďđîăđŕěěŕ íĺ ďŕäŕĺň)
+// Тест на вывод
 TEST(jungtableTest, PrintTest) {
     jungtable table;
     table.push(8);
@@ -59,7 +59,7 @@ TEST(jungtableTest, PrintTest) {
     table.print();
 }
 
-// Çŕďóńę âńĺő ňĺńňîâ
+// Запуск всех тестов
 int main(int argc, char** argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
