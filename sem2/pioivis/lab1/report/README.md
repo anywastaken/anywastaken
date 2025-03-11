@@ -38,6 +38,17 @@
 		
 ## Тесты
 
+1. Тест на добавление элементов
+```
+TEST(jungtableTest, PushTest) {
+    jungtable table;
+
+    EXPECT_EQ(table.push(5), 0);  // Успешное добавление 5
+    EXPECT_EQ(table.push(3), 0);  // Добавление 3
+    EXPECT_EQ(table.push(7), 0);  // Добавление 7
+    EXPECT_EQ(table.push(5), 404); // Повторное добавление 5 должно вернуть 404
+}
+```
 
 ## Вывод
 
