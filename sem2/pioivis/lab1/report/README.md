@@ -27,6 +27,7 @@
 <summary> *push* - добавление элемента в таблицу Юнга.</summary>
 
 </details>
+шнпиншишнинин
 <details>
 <summary> *delete* - удаление элемента из таблицы Юнга. </summary>
 
