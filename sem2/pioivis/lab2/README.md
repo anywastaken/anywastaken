@@ -64,18 +64,12 @@
 		
 ## Тесты
 
-1. Тест на добавление элементов
+1. 
 ```
-TEST(jungtableTest, PushTest) {
-    jungtable table;
-
-    EXPECT_EQ(table.push(5), 0);  
-    EXPECT_EQ(table.push(3), 0);  
-    EXPECT_EQ(table.push(7), 0);  
-    EXPECT_EQ(table.push(5), 404); 
-}
+{{<Q, {}>}, <R, T>}}
+{A, D,{<Q, {}>}, <R,T>,U}
 ```
-2. Тест на удаление
+2. 
 ```
 TEST(jungtableTest, DeleteTest) {
     jungtable table;
@@ -101,7 +95,7 @@ TEST(jungtableTest, DeleteTest) {
     EXPECT_EQ(table.body, expected);
 }
 ```
-3. Тест на сортировку элементов
+3. 
 ```
 TEST(jungtableTest, OrderTest) {
     jungtable table;
@@ -115,14 +109,14 @@ TEST(jungtableTest, OrderTest) {
     EXPECT_EQ(table.body, expected);
 }
 ```
-4. Проверка пустой таблицы
+4. 
 ```
 TEST(jungtableTest, EmptyTest) {
     jungtable table;
     EXPECT_TRUE(table.body.empty());  
 }
 ```
-5. Тест на вывод
+5. 
 ```
 TEST(jungtableTest, PrintTest) {
     jungtable table;
