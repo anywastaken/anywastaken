@@ -64,27 +64,27 @@
 		
 ## Тесты
 
-1. 
+1. Is underset: 1, Is element: 0
 ```
 {{<Q, {}>}, <R, T>}}
 {A, D,{<Q, {}>}, <R,T>,U}
 ```
-2. 
+2. Is underset: 1, Is element: 0
 ```
 { <T, H>, C, D, <Z, X> }
 { <T, H>, C, D, <Z, X>, N }
 ```
-3. 
+3. Is underset: 0, Is element: 1
 ```
 {A, B, C, <D, E>}
 {{A, B, C, <D, E>}, F, G}
 ```
-4. 
+4. wrong set
 ```
 {A, B, C}
 {D, E  F>
 ```
-5. 
+5. wrong set
 ```
 {A, B, C}
 {{A, B, C}, <D, E, F>}
