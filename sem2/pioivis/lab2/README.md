@@ -46,7 +46,19 @@
 	Обычные элементы вносит в строку, при встрече подмножеств или подкартежей рекурсивно вызывает функцию returnset и returntuple и полученные в их результате строки так же добавляет в возвращаемое значение.
 </details>
 <details>
-<summary> ** - . </summary>
+<summary> *check* - функция проверки правильности входных данных. </summary>
+	Проверяет наличие {} и вызывает функцию checkSet.
+</details>
+<details>
+<summary> *checkSet* - проверка множества. </summary>
+	Так же рекурсивно вызывает checkSet и checkTuple для проверки подмножеств и подкартежей.
+</details>
+<details>
+<summary> *checkTuple* - проверка картежа. </summary>
+	Так же рекурсивно вызывает checkSet и checkTuple для проверки подмножеств и подкартежей..
+</details>
+<details>
+<summary> *iselement, isunderset* - финальнуе функции, дающие ответ на вопрос задачи. </summary>
 	.
 </details>
 		
